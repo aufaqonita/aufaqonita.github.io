@@ -29,7 +29,7 @@
 
 .menu {
   padding: 50px 0;
-  background-color: #fef1f3;
+  background-color: #FCDA9B;
   text-align: center;
 }
 
@@ -53,6 +53,7 @@ text-size-adjust: 32;
 
 .check-out{
   color: #453311;
+  margin-bottom: 35px;
 }
 
 .btn-order{
@@ -63,11 +64,15 @@ text-size-adjust: 32;
 .btn-order-now{
   background-color: #AC8C50;
   color: #FFFEFE;
+  border: none;
+  border-radius: 10%;
 }
 
 .btn-grab-now{
   background-color: #B47604;
   color: #FFFEFE;
+  border: none;
+  border-radius: 10%;
 }
 
 .cookies{
@@ -125,7 +130,7 @@ text-size-adjust: 32;
   width: 50%;
 }
  .text-contact{
-  color: #E2B96C;
+  color: #F9C971;
  }
 
  .text-testimoni{
@@ -169,4 +174,13 @@ text-size-adjust: 32;
 }
 .learn-more-about-us {
   font-size: larger;
+}
+
+.py-5 {
+  background-color: #AC8C50;
+  border-radius: 3%;
+}
+
+.btn-send{
+  background-color: #E2B96C;
 }
