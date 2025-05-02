@@ -1,0 +1,56 @@
+names = ["andi","beni","cahyo"]
+names = list(("andi","beni","cahyo"))
+name = andi
+letters = list(name)
+
+names = ["andi","beni","cahyo"]
+print(names[2])
+
+names = ("andi","beni","cahyo")
+names = tuple(("andi","beni","cahyo"))
+name = andi
+letters = tuple(name)
+
+names = ("andi","beni","cahyo")
+names_list = list(names)
+names_list.append("dodi")
+names_list[2] = "cahyo saputra"
+names_list.remove("andi")
+
+names = tuple(names_list)
+
+names = {"andi","beni","cahyo"}
+names = set(("andi","beni","cahyo"))
+name = andi
+letters = set(name)
+names = {"andi","beni","cahyo"}
+print(names)
+print(names[2])
+names = {"andi","beni","cahyo"}
+names.add("dodi")
+names.discard("andi")
+names.remove("ega")
+names.pop()
+
+student = {'name':'andi','address':'jakarta'}
+student = dict{ name='andi', address='jakarta'}
+student = {
+    'name' : 'andi'
+    'address' : 'jakarta'
+    'age' : 17
+    'active' : True
+    'hobbies' : [
+        'swimming',
+        'soccer',
+        'climbing',
+    ]
+}
+print(student['age'])
+student['phone'] = '08123456789'
+student['address'] = 'bandung'
+student.pop('age')
+student.popitem()
+
+
+
+
