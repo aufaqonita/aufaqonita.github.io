@@ -1,21 +1,33 @@
-import mathemathics
+import requests
 
-mathemathics.area_of_square(50)
-mathemathics.area_of_triangle(8, 12)
+latitude = -6.2088
+longtitude = 106.8456
+
+url = f"https://api.aladhan.com/v1/timings?latitude={latitude}&longitude={longitude}&method=20"
+
+response = requests.get(url)
+
+if response.status_code == 200:
+    data = response.json()
+    timings = data["data"]["timings"]
+    date = data["data"]["date"]["readable"]
 
 
-import mathemathics as mm
+    print(f"() jadwal salat untuk tanggal {date}")
+    print("" * 40)
+    print(f"imsak     : {timings['imsak']}")
+    print(f"subuh     : {timings['fajr']}")
+    print(f"terbit    : {timings['sunrise']}")
+    print(f"ashar     : {timings['asr']}")
+    print(f"maghrib   : {timings['maghrib']}")
+    print(f"isya      : {timings['isha']}")
+    print("-" * 40)
 
-mm.area_of_square(50)
-mm.area_of_triangle(8, 12)
+else:
+    print(f"X gagal ambil data dari API. Status code : {response.status_code}")    
+    
 
-from mathemathics import area_of_triangle
-area_of_triangle(8, 12)
 
-from mathematics.square.area import square_area
-from mathematics.square.area import triangle_area
-from mathematics.square.area import circle_area
 
-square_area(15)
-triangle_area(10, 15)
-circle_area(12)
+
+
